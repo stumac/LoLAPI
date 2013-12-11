@@ -8,7 +8,7 @@ Might not work, I haven't tested it that thoroughly yet (still very much being w
 
 You should just be able to do
 
-  gem 'lolapi'
+  	gem 'lolapi'
 
 This is my first gem however, so I may have mucked something up somewhere. Just let me know!
 
