@@ -28,6 +28,17 @@ class LoLAPI
   def self.summoner(name, region)
     query '/api/lol/' + region + '/v1.1/summoner/by-name/' + name
   end
+  
+  def self.summonerById(summoner_id, region)
+    query 'api/lol/' + region + '/v1.1/summoner/' + summoner_id.to_s
+  end
+  
+  def self.summonerMasteries(summoner_id, region)
+    query '/api/lol/' + region + '/v1.1/summoner/'+ summoner_id.to_s + '/masteries'
+  end
+  
+  def self.summonerRunes(summoner_id, region)
+     query '/api/lol/' + region + '/v1.1/summoner/'+ summoner_id.to_s + '/runes'
 
   def self.team(summoner_id, region)
     query '/api/' + region + '/v2.1/team/by-summoner/' + summoner_id.to_s
