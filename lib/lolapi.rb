@@ -24,7 +24,23 @@ class LoLAPI
   def self.ranked(summoner_id, region)
     query '/api/lol/' + region + '/v1.1/stats/by-summoner/' + summoner_id.to_s + '/ranked'
   end
+  
+  def self.summonerById(summoner_id, region)
+    query '/api/lol/' + region + '/v1.1/summoner/' + summoner_id.to_s
+  end
+  
+  def self.summonerRunes(summoner_id, region)
+    query '/api/lol/' + region + '/v1.1/summoner/' + summoner_id.to_s + '/runes'
+  end
+  
+  def self.summonerMasteries(summoner_id, region)
+    query '/api/lol/' + region + '/v1.1/summoner/' + summoner_id.to_s + '/masteries'
+  end
 
+  def self.summonersById(summonerIds, region)
+    query '/api/lol/' + region + '/v1.1/summoner/' + summonerIds.join(",") + '/name'
+  end
+  
   def self.summoner(name, region)
     query '/api/lol/' + region + '/v1.1/summoner/by-name/' + name
   end
