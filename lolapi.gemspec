@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'lolapi'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2013-12-10'
   s.summary     = "A wrapper for the League of Legends API"
   s.description = "A wrapper for the League of Legends API desc"
